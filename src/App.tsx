@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+﻿import { useMemo, useState } from "react";
 import {
   ELECTRON_QM,
   SimulationState,
@@ -166,7 +166,7 @@ export default function App() {
   return (
     <main className="page">
       <section className="controls">
-        <h1>Bestam q/m for elektronen</h1>
+        <h1>Bestäm q/m för elektronen</h1>
         <p className="subtitle">Helmholtz-spole + elektronkanon (gymnasielabb)</p>
 
         <label className="switch-row" htmlFor="gun-toggle">
@@ -194,7 +194,7 @@ export default function App() {
         </label>
 
         <label className="field" htmlFor="voltage">
-          Accelerationsspanning U: <strong>{state.voltageV.toFixed(0)} V</strong>
+          Accelerationsspänning U: <strong>{state.voltageV.toFixed(0)} V</strong>
           <input
             id="voltage"
             type="range"
@@ -207,7 +207,7 @@ export default function App() {
         </label>
 
         <label className="field" htmlFor="current">
-          Strom genom Helmholtz-spole I: <strong>{state.coilCurrentA.toFixed(2)} A</strong>
+          Ström genom Helmholtz-spole I: <strong>{state.coilCurrentA.toFixed(2)} A</strong>
           <input
             id="current"
             type="range"
@@ -222,7 +222,7 @@ export default function App() {
         <section className="readouts" aria-label="Instrumentpanel">
           <h2>Instrumentpanel</h2>
           <div><span>Amperemeter:</span><strong>{readouts.currentA}</strong></div>
-          <div><span>Magnetfalt B:</span><strong>{readouts.magneticFieldmT}</strong></div>
+          <div><span>Magnetfält B:</span><strong>{readouts.magneticFieldmT}</strong></div>
         </section>
       </section>
 
@@ -232,5 +232,6 @@ export default function App() {
     </main>
   );
 }
+
 
 
